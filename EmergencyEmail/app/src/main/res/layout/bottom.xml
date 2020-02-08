@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7EAED"
+    android:orientation="vertical"
+    android:paddingTop="6dp">
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="395dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="172dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="211dp"
+            android:layout_marginRight="211dp"
+            android:layout_marginBottom="2dp"
+            android:text="Start Time:"
+            android:textColor="#2d2f31"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="361dp"
+            android:layout_height="42dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="6dp"
+            android:gravity="right"
+            android:onClick="start"
+            android:paddingTop="7dp"
+            android:text="00:00 AM"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="395dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rel2">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="172dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="211dp"
+            android:layout_marginRight="211dp"
+            android:layout_marginBottom="2dp"
+            android:text="End Time:"
+            android:textColor="#2d2f31"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="360dp"
+            android:layout_height="42dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="6dp"
+            android:gravity="right"
+            android:longClickable="true"
+            android:onClick="end"
+            android:paddingTop="7dp"
+            android:text="00:00 AM"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel3"
+        android:layout_width="395dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="115dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="264dp"
+            android:layout_marginRight="264dp"
+            android:layout_marginBottom="153dp"
+            android:text="Weekdays"
+            android:textColor="#2d2f31"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="148dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="#E7EAED" />
+
+        <CheckBox
+            android:id="@+id/checkBox8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="296dp"
+            android:layout_marginRight="296dp"
+            android:layout_marginBottom="102dp"
+            android:onClick="checkbox"
+            android:text="Sunday"
+            android:textColor="#757575"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="287dp"
+            android:layout_marginRight="287dp"
+            android:layout_marginBottom="34dp"
+            android:onClick="checkbox"
+            android:text="Saturday"
+            android:textColor="#757575"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox13"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="239dp"
+            android:layout_marginRight="239dp"
+            android:layout_marginBottom="66dp"
+            android:onClick="checkbox"
+            android:text="Wednesday"
+            android:textColor="#757575"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="150dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginBottom="102dp"
+            android:onClick="checkbox"
+            android:text="Monday"
+            android:textColor="#757575"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="141dp"
+            android:layout_marginRight="141dp"
+            android:layout_marginBottom="66dp"
+            android:onClick="checkbox"
+            android:text="Thursday"
+            android:textColor="#757575"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginBottom="102dp"
+            android:onClick="checkbox"
+            android:text="Tuesday"
+            android:textColor="#757575"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="67dp"
+            android:onClick="checkbox"
+            android:text="Friday"
+            android:textColor="#757575"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="425dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="#f44336"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rel3">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="3dp"
+            android:layout_height="37dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="197dp"
+            android:layout_marginRight="197dp"
+            android:layout_marginBottom="6dp"
+            android:background="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="254dp"
+            android:layout_marginRight="254dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="cancel"
+            android:text="Cancel"
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="77dp"
+            android:layout_marginRight="77dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="save"
+            android:text="OK"
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
